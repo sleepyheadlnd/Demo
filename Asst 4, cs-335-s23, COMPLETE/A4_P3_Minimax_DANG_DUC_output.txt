@@ -1,0 +1,215 @@
+C:\Users\shado\AppData\Local\Programs\Python\Python311\python.exe "D:\Homework\Asst 4, cs-335-s23, COMPLETE\A4_P3_Minimax_DANG_DUC.py" 
+
+LASTNAME_FIRSTNAME
+CS-335, Spring 2023
+A4_P3_Minimax
+
+Welcome to the Divisor Game, version MINIMAX!
+
+Enter your name:  Duc
+
+=========================================================
+Test case 1:
+
+Do you want to go (1) first or (2) second?:  2
+
+Enter positive integer n:  60
+
+Here are the remaining numbers: [1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60]
+Agent picked 1.  (Agent visited 169508 nodes to determine this.)
+
+Here are the remaining numbers: [2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60]
+Duc, pick a number from the list above: 12
+
+Here are the remaining numbers: [5, 10, 15, 20, 30, 60]
+Agent picked 5.  (Agent visited 116 nodes to determine this.)
+
+Here are the remaining numbers: [10, 15, 20, 30, 60]
+Duc, pick a number from the list above: 20
+
+Here are the remaining numbers: [15, 30, 60]
+Agent picked 30.  (Agent visited 8 nodes to determine this.)
+
+Here are the remaining numbers: [60]
+Duc, pick a number from the list above: 60
+
+Duc, you lose! Agent, you win!
+
+Do you want to play again? (y/n):  y
+
+
+=========================================================
+Test case 2:
+
+Do you want to go (1) first or (2) second?:  2
+
+Enter positive integer n:  60
+
+Here are the remaining numbers: [1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60]
+Agent picked 1.  (Agent visited 169508 nodes to determine this.)
+
+Here are the remaining numbers: [2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60]
+Duc, pick a number from the list above: 6
+
+Here are the remaining numbers: [4, 5, 10, 12, 15, 20, 30, 60]
+Agent picked 10.  (Agent visited 1976 nodes to determine this.)
+
+Here are the remaining numbers: [4, 12, 15, 20, 30, 60]
+Duc, pick a number from the list above: 20
+
+Here are the remaining numbers: [12, 15, 30, 60]
+Agent picked 15.  (Agent visited 24 nodes to determine this.)
+
+Here are the remaining numbers: [12, 30, 60]
+Duc, pick a number from the list above: 30
+
+Here are the remaining numbers: [12, 60]
+Agent picked 12.  (Agent visited 4 nodes to determine this.)
+
+Here are the remaining numbers: [60]
+Duc, pick a number from the list above: 60
+
+Duc, you lose! Agent, you win!
+
+Do you want to play again? (y/n):  y
+
+
+=========================================================
+Test case 3:
+
+Do you want to go (1) first or (2) second?:  1
+
+Enter positive integer n:  60
+
+Here are the remaining numbers: [1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60]
+Duc, pick a number from the list above: 1
+
+Here are the remaining numbers: [2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60]
+Agent picked 2.  (Agent visited 84754 nodes to determine this.)
+
+Here are the remaining numbers: [3, 4, 5, 6, 10, 12, 15, 20, 30, 60]
+Duc, pick a number from the list above: 10
+
+Here are the remaining numbers: [3, 4, 6, 12, 15, 20, 30, 60]
+Agent picked 6.  (Agent visited 1976 nodes to determine this.)
+
+Here are the remaining numbers: [4, 12, 15, 20, 30, 60]
+Duc, pick a number from the list above: 30
+
+Here are the remaining numbers: [4, 12, 20, 60]
+Agent picked 4.  (Agent visited 20 nodes to determine this.)
+
+Here are the remaining numbers: [12, 20, 60]
+Duc, pick a number from the list above: 20
+
+Here are the remaining numbers: [12, 60]
+Agent picked 12.  (Agent visited 4 nodes to determine this.)
+
+Here are the remaining numbers: [60]
+Duc, pick a number from the list above: 60
+
+Duc, you lose! Agent, you win!
+
+Do you want to play again? (y/n):  y
+
+
+=========================================================
+Test case 4:
+
+Do you want to go (1) first or (2) second?:  2
+
+Enter positive integer n:  120
+
+Here are the remaining numbers: [1, 2, 3, 4, 5, 6, 8, 10, 12, 15, 20, 24, 30, 40, 60, 120]
+Agent picked 1.  (Agent visited 31349260 nodes to determine this.)
+
+Here are the remaining numbers: [2, 3, 4, 5, 6, 8, 10, 12, 15, 20, 24, 30, 40, 60, 120]
+Duc, pick a number from the list above: 30
+
+Here are the remaining numbers: [4, 8, 12, 20, 24, 40, 60, 120]
+Agent picked 4.  (Agent visited 1324 nodes to determine this.)
+
+Here are the remaining numbers: [8, 12, 20, 24, 40, 60, 120]
+Duc, pick a number from the list above: 60
+
+Here are the remaining numbers: [8, 24, 40, 120]
+Agent picked 8.  (Agent visited 20 nodes to determine this.)
+
+Here are the remaining numbers: [24, 40, 120]
+Duc, pick a number from the list above: 40
+
+Here are the remaining numbers: [24, 120]
+Agent picked 24.  (Agent visited 4 nodes to determine this.)
+
+Here are the remaining numbers: [120]
+Duc, pick a number from the list above: 120
+
+Duc, you lose! Agent, you win!
+
+Do you want to play again? (y/n):  y
+
+
+=========================================================
+Test case 5:
+
+Do you want to go (1) first or (2) second?:  1
+
+Enter positive integer n:  150
+
+Here are the remaining numbers: [1, 2, 3, 5, 6, 10, 15, 25, 30, 50, 75, 150]
+Duc, pick a number from the list above: 50
+
+Here are the remaining numbers: [3, 6, 15, 30, 75, 150]
+Agent picked 3.  (Agent visited 116 nodes to determine this.)
+
+Here are the remaining numbers: [6, 15, 30, 75, 150]
+Duc, pick a number from the list above: 75
+
+Here are the remaining numbers: [6, 30, 150]
+Agent picked 30.  (Agent visited 8 nodes to determine this.)
+
+Here are the remaining numbers: [150]
+Duc, pick a number from the list above: 1250
+Duc, pick something that is IN the list: 150
+
+Duc, you lose! Agent, you win!
+
+Do you want to play again? (y/n):  y
+
+
+=========================================================
+Test case 6:
+
+Do you want to go (1) first or (2) second?:  1
+
+Enter positive integer n:  360
+
+Here are the remaining numbers: [1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 15, 18, 20, 24, 30, 36, 40, 45, 60, 72, 90, 120, 180, 360]
+Duc, pick a number from the list above: 45
+
+Here are the remaining numbers: [2, 4, 6, 8, 10, 12, 18, 20, 24, 30, 36, 40, 60, 72, 90, 120, 180, 360]
+Agent picked 2.  (Agent visited 886431868 nodes to determine this.)
+
+Here are the remaining numbers: [4, 6, 8, 10, 12, 18, 20, 24, 30, 36, 40, 60, 72, 90, 120, 180, 360]
+Duc, pick a number from the list above: 120
+
+Here are the remaining numbers: [18, 36, 72, 90, 180, 360]
+Agent picked 18.  (Agent visited 116 nodes to determine this.)
+
+Here are the remaining numbers: [36, 72, 90, 180, 360]
+Duc, pick a number from the list above: 180
+
+Here are the remaining numbers: [72, 360]
+Agent picked 72.  (Agent visited 4 nodes to determine this.)
+
+Here are the remaining numbers: [360]
+Duc, pick a number from the list above: 360
+
+Duc, you lose! Agent, you win!
+
+Do you want to play again? (y/n):  n
+
+
+Bye!
+
+Process finished with exit code 0

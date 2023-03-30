@@ -1,0 +1,136 @@
+C:\Users\shado\AppData\Local\Programs\Python\Python311\python.exe "D:\Homework\Asst 4, cs-335-s23, COMPLETE\A4_P5_AlphaBeta_DANG_DUC.py" 
+
+DANG_DUC
+CS-335, Spring 2023
+A4_P5_AlphaBeta
+
+Welcome to the Divisor Game, version MINIMAX!
+
+Enter your name:  Duc
+
+=========================================================
+Test case 1:
+
+Do you want to go (1) first or (2) second?:  2
+
+Enter positive integer n:  120
+
+Here are the remaining numbers: [1, 2, 3, 4, 5, 6, 8, 10, 12, 15, 20, 24, 30, 40, 60, 120]
+Agent picked 1.  (Agent visited 3185973 nodes to determine this.)
+
+Here are the remaining numbers: [2, 3, 4, 5, 6, 8, 10, 12, 15, 20, 24, 30, 40, 60, 120]
+Duc, pick a number from the list above: 12
+
+Here are the remaining numbers: [5, 8, 10, 15, 20, 24, 30, 40, 60, 120]
+Agent picked 10.  (Agent visited 4883 nodes to determine this.)
+
+Here are the remaining numbers: [8, 15, 20, 24, 30, 40, 60, 120]
+Duc, pick a number from the list above: 30
+
+Here are the remaining numbers: [8, 20, 24, 40, 60, 120]
+Agent picked 40.  (Agent visited 105 nodes to determine this.)
+
+Here are the remaining numbers: [24, 60, 120]
+Duc, pick a number from the list above: 60
+
+Here are the remaining numbers: [24, 120]
+Agent picked 24.  (Agent visited 4 nodes to determine this.)
+
+Here are the remaining numbers: [120]
+Duc, pick a number from the list above: 120
+
+Duc, you lose! Agent, you win!
+
+Do you want to play again? (y/n):  y
+
+
+=========================================================
+Test case 2:
+
+Do you want to go (1) first or (2) second?:  1
+
+Enter positive integer n:  120
+
+Here are the remaining numbers: [1, 2, 3, 4, 5, 6, 8, 10, 12, 15, 20, 24, 30, 40, 60, 120]
+Duc, pick a number from the list above: 1
+
+Here are the remaining numbers: [2, 3, 4, 5, 6, 8, 10, 12, 15, 20, 24, 30, 40, 60, 120]
+Agent picked 2.  (Agent visited 3125313 nodes to determine this.)
+
+Here are the remaining numbers: [3, 4, 5, 6, 8, 10, 12, 15, 20, 24, 30, 40, 60, 120]
+Duc, pick a number from the list above: 10
+
+Here are the remaining numbers: [3, 4, 6, 8, 12, 15, 20, 24, 30, 40, 60, 120]
+Agent picked 12.  (Agent visited 45911 nodes to determine this.)
+
+Here are the remaining numbers: [8, 15, 20, 24, 30, 40, 60, 120]
+Duc, pick a number from the list above: 60
+
+Here are the remaining numbers: [8, 24, 40, 120]
+Agent picked 8.  (Agent visited 17 nodes to determine this.)
+
+Here are the remaining numbers: [24, 40, 120]
+Duc, pick a number from the list above: 40
+
+Here are the remaining numbers: [24, 120]
+Agent picked 24.  (Agent visited 4 nodes to determine this.)
+
+Here are the remaining numbers: [120]
+Duc, pick a number from the list above: 120
+
+Duc, you lose! Agent, you win!
+
+Do you want to play again? (y/n):  y
+
+
+=========================================================
+Test case 3:
+
+Do you want to go (1) first or (2) second?:  2
+
+Enter positive integer n:  500
+
+Here are the remaining numbers: [1, 2, 4, 5, 10, 20, 25, 50, 100, 125, 250, 500]
+Agent picked 10.  (Agent visited 9214 nodes to determine this.)
+
+Here are the remaining numbers: [4, 20, 25, 50, 100, 125, 250, 500]
+Duc, pick a number from the list above: 250
+
+Here are the remaining numbers: [4, 20, 100, 500]
+Agent picked 100.  (Agent visited 15 nodes to determine this.)
+
+Here are the remaining numbers: [500]
+Duc, pick a number from the list above: 500
+
+Duc, you lose! Agent, you win!
+
+Do you want to play again? (y/n):  y
+
+
+=========================================================
+Test case 4:
+
+Do you want to go (1) first or (2) second?:  2
+
+Enter positive integer n:  391
+
+Here are the remaining numbers: [1, 17, 23, 391]
+Agent picked 1.  (Agent visited 17 nodes to determine this.)
+
+Here are the remaining numbers: [17, 23, 391]
+Duc, pick a number from the list above: 23
+
+Here are the remaining numbers: [17, 391]
+Agent picked 17.  (Agent visited 4 nodes to determine this.)
+
+Here are the remaining numbers: [391]
+Duc, pick a number from the list above: 391
+
+Duc, you lose! Agent, you win!
+
+Do you want to play again? (y/n):  n
+
+
+Bye!
+
+Process finished with exit code 0

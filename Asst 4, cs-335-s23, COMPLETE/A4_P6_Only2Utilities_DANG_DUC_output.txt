@@ -1,0 +1,115 @@
+C:\Users\shado\AppData\Local\Programs\Python\Python311\python.exe "D:\Homework\Asst 4, cs-335-s23, COMPLETE\A4_P6_Only2Utilities_DANG_DUC.py" 
+
+DANG_DUC
+CS-335, Spring 2023
+A4_P6_Only2Utilities
+
+Welcome to the Divisor Game, version MINIMAX!
+
+Enter your name:  Duc
+
+=========================================================
+Test case 1:
+
+Do you want to go (1) first or (2) second?:  2
+
+Enter positive integer n:  120
+
+Here are the remaining numbers: [1, 2, 3, 4, 5, 6, 8, 10, 12, 15, 20, 24, 30, 40, 60, 120]
+Agent picked 1.  (Agent visited 3072141 nodes to determine this.)
+
+Here are the remaining numbers: [2, 3, 4, 5, 6, 8, 10, 12, 15, 20, 24, 30, 40, 60, 120]
+Duc, pick a number from the list above: 40
+
+Here are the remaining numbers: [3, 6, 12, 15, 24, 30, 60, 120]
+Agent picked 3.  (Agent visited 171 nodes to determine this.)
+
+Here are the remaining numbers: [6, 12, 15, 24, 30, 60, 120]
+Duc, pick a number from the list above: 12
+
+Here are the remaining numbers: [15, 24, 30, 60, 120]
+Agent picked 30.  (Agent visited 36 nodes to determine this.)
+
+Here are the remaining numbers: [24, 60, 120]
+Duc, pick a number from the list above: 60
+
+Here are the remaining numbers: [24, 120]
+Agent picked 24.  (Agent visited 3 nodes to determine this.)
+
+Here are the remaining numbers: [120]
+Duc, pick a number from the list above: 120
+
+Duc, you lose! Agent, you win!
+
+Do you want to play again? (y/n):  y
+
+
+=========================================================
+Test case 2:
+
+Do you want to go (1) first or (2) second?:  2
+
+Enter positive integer n:  150
+
+Here are the remaining numbers: [1, 2, 3, 5, 6, 10, 15, 25, 30, 50, 75, 150]
+Agent picked 1.  (Agent visited 7467 nodes to determine this.)
+
+Here are the remaining numbers: [2, 3, 5, 6, 10, 15, 25, 30, 50, 75, 150]
+Duc, pick a number from the list above: 25
+
+Here are the remaining numbers: [2, 3, 6, 10, 15, 30, 50, 75, 150]
+Agent picked 30.  (Agent visited 900 nodes to determine this.)
+
+Here are the remaining numbers: [50, 75, 150]
+Duc, pick a number from the list above: 50
+
+Here are the remaining numbers: [75, 150]
+Agent picked 75.  (Agent visited 3 nodes to determine this.)
+
+Here are the remaining numbers: [150]
+Duc, pick a number from the list above: 150
+
+Duc, you lose! Agent, you win!
+
+Do you want to play again? (y/n):  y
+
+
+=========================================================
+Test case 3:
+
+Do you want to go (1) first or (2) second?:  2
+
+Enter positive integer n:  210
+
+Here are the remaining numbers: [1, 2, 3, 5, 6, 7, 10, 14, 15, 21, 30, 35, 42, 70, 105, 210]
+Agent picked 1.  (Agent visited 1617681 nodes to determine this.)
+
+Here are the remaining numbers: [2, 3, 5, 6, 7, 10, 14, 15, 21, 30, 35, 42, 70, 105, 210]
+Duc, pick a number from the list above: 42
+
+Here are the remaining numbers: [5, 10, 15, 30, 35, 70, 105, 210]
+Agent picked 5.  (Agent visited 210 nodes to determine this.)
+
+Here are the remaining numbers: [10, 15, 30, 35, 70, 105, 210]
+Duc, pick a number from the list above: 105
+
+Here are the remaining numbers: [10, 30, 70, 210]
+Agent picked 10.  (Agent visited 9 nodes to determine this.)
+
+Here are the remaining numbers: [30, 70, 210]
+Duc, pick a number from the list above: 70
+
+Here are the remaining numbers: [30, 210]
+Agent picked 30.  (Agent visited 3 nodes to determine this.)
+
+Here are the remaining numbers: [210]
+Duc, pick a number from the list above: 210
+
+Duc, you lose! Agent, you win!
+
+Do you want to play again? (y/n):  n
+
+
+Bye!
+
+Process finished with exit code 0

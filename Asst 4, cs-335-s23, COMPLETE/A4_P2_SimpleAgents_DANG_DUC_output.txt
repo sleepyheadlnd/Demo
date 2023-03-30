@@ -1,0 +1,115 @@
+DANG_DUC
+CS-335, Spring 2023
+A4_P2_SimpleAgents
+
+Welcome to the Divisor Game!
+
+=========================================================
+Test case 1:
+
+Enter your name:  Duc
+Which agent do you want to play?  (1) agent_smallest or (2) agent_random:  1
+Do you want to go (1) first or (2) second?:  1
+
+Enter positive integer n:  30
+
+Here are the remaining numbers: [1, 2, 3, 5, 6, 10, 15, 30]
+Duc, pick a number from the list above: 6
+
+Here are the remaining numbers: [5, 10, 15, 30]
+Agent picked 5
+
+Here are the remaining numbers: [10, 15, 30]
+Duc, pick a number from the list above: 15
+
+Here are the remaining numbers: [10, 30]
+Agent picked 10
+
+Here are the remaining numbers: [30]
+Duc, pick a number from the list above: 30
+
+Duc, you lose! Agent, you win!
+
+Do you want to play again? (y/n):  y
+
+=========================================================
+Test case 2:
+
+Enter your name:  Duc
+Which agent do you want to play?  (1) agent_smallest or (2) agent_random:  2
+Do you want to go (1) first or (2) second?:  2
+
+Enter positive integer n:  30
+
+Here are the remaining numbers: [1, 2, 3, 5, 6, 10, 15, 30]
+Agent picked 3
+
+Here are the remaining numbers: [2, 5, 6, 10, 15, 30]
+Duc, pick a number from the list above: 10
+
+Here are the remaining numbers: [6, 15, 30]
+Agent picked 15
+
+Here are the remaining numbers: [6, 30]
+Duc, pick a number from the list above: 6
+
+Here are the remaining numbers: [30]
+Agent picked 30
+
+Agent, you lose! Duc, you win!
+
+Do you want to play again? (y/n):  y
+
+=========================================================
+Test case 3:
+
+Enter your name:  Duc
+Which agent do you want to play?  (1) agent_smallest or (2) agent_random:  1
+Do you want to go (1) first or (2) second?:  2
+
+Enter positive integer n:  50
+
+Here are the remaining numbers: [1, 2, 5, 10, 25, 50]
+Agent picked 1
+
+Here are the remaining numbers: [2, 5, 10, 25, 50]
+Duc, pick a number from the list above: 25
+
+Here are the remaining numbers: [2, 10, 50]
+Agent picked 2
+
+Here are the remaining numbers: [10, 50]
+Duc, pick a number from the list above: 10
+
+Here are the remaining numbers: [50]
+Agent picked 50
+
+Agent, you lose! Duc, you win!
+
+Do you want to play again? (y/n):  y
+
+=========================================================
+Test case 4:
+
+Enter your name:  Duc
+Which agent do you want to play?  (1) agent_smallest or (2) agent_random:  2
+Do you want to go (1) first or (2) second?:  2
+
+Enter positive integer n:  50
+
+Here are the remaining numbers: [1, 2, 5, 10, 25, 50]
+Agent picked 10
+
+Here are the remaining numbers: [25, 50]
+Duc, pick a number from the list above: 25
+
+Here are the remaining numbers: [50]
+Agent picked 50
+
+Agent, you lose! Duc, you win!
+
+Do you want to play again? (y/n):  n
+
+Bye!
+
+Process finished with exit code 0

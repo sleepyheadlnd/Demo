@@ -1,0 +1,84 @@
+C:\Users\shado\AppData\Local\Programs\Python\Python311\python.exe "D:\Homework\Asst 4, cs-335-s23, COMPLETE\A4_P1_Moderate_LASTNAME_FIRSTNAME.py" 
+
+DANG_DUC
+CS-335, Spring 2023
+A4_P1_Moderate
+
+Welcome to the Divisor Game!
+
+=========================================================
+Test case 1:
+
+Player 1, enter your name:  Duc
+Player 2, enter your name:  Anh
+
+Enter positive integer n:  30
+
+Here are the remaining numbers: [1, 2, 3, 5, 6, 10, 15, 30]
+Duc, pick a number from the list above: 6
+
+Here are the remaining numbers: [5, 10, 15, 30]
+Anh, pick a number from the list above: 15
+
+Here are the remaining numbers: [10, 30]
+Duc, pick a number from the list above: 10
+
+Here are the remaining numbers: [30]
+Anh, pick a number from the list above: 30
+
+Anh, you lose! Duc, you win!
+
+Do you want to play again? (y/n):  y
+
+=========================================================
+Test case 2:
+
+Player 1, enter your name:  Duc
+Player 2, enter your name:  Anh
+
+Enter positive integer n:  30
+
+Here are the remaining numbers: [1, 2, 3, 5, 6, 10, 15, 30]
+Duc, pick a number from the list above: 30
+
+Duc, you lose! Anh, you win!
+
+Do you want to play again? (y/n):  y
+
+=========================================================
+Test case 3:
+
+Player 1, enter your name:  Duc
+Player 2, enter your name:  Anh
+
+Enter positive integer n:  60
+
+Here are the remaining numbers: [1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60]
+Duc, pick a number from the list above: 20
+
+Here are the remaining numbers: [3, 6, 12, 15, 30, 60]
+Anh, pick a number from the list above: 5
+Anh, pick something that is IN the list: 7
+Anh, pick something that is IN the list: 11
+Anh, pick something that is IN the list: -2
+Anh, pick something that is IN the list: 15
+
+Here are the remaining numbers: [6, 12, 30, 60]
+Duc, pick a number from the list above: 6
+
+Here are the remaining numbers: [12, 30, 60]
+Anh, pick a number from the list above: 12
+
+Here are the remaining numbers: [30, 60]
+Duc, pick a number from the list above: 30
+
+Here are the remaining numbers: [60]
+Anh, pick a number from the list above: 60
+
+Anh, you lose! Duc, you win!
+
+Do you want to play again? (y/n):  n
+
+Bye!
+
+Process finished with exit code 0

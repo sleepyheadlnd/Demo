@@ -1,0 +1,625 @@
+DANG_DUC
+CS-335, Spring 2023
+A2P2, Rumba Simulation
+
+
+Agent: DANG_DUC
+
+probability of dirt:  0.1
+points for moving:  -1
+points for vacuuming:  -1
+points for exactly one room clean:  1
+points for exactly two rooms clean:  2
+
+
+Morning #0:
+Environment: [1, 'CLEAN', 'CLEAN']
+Percept: [1, 'CLEAN']
+Score: 0
+
+Night action = None
+
+Morning #1:
+Environment: [1, 'CLEAN', 'CLEAN']
+Percept: [1, 'CLEAN']
+Score: 2
+
+Night action = None
+
+Morning #2:
+Environment: [1, 'CLEAN', 'CLEAN']
+Percept: [1, 'CLEAN']
+Score: 4
+
+Night action = RIGHT
+
+Morning #3:
+Environment: [2, 'CLEAN', 'CLEAN']
+Percept: [2, 'CLEAN']
+Score: 5
+
+Night action = None
+
+Morning #4:
+Environment: [2, 'CLEAN', 'CLEAN']
+Percept: [2, 'CLEAN']
+Score: 7
+
+Night action = None
+
+Morning #5:
+Environment: [2, 'CLEAN', 'DIRTY']
+Percept: [2, 'DIRTY']
+Score: 8
+
+Night action = VACUUM
+
+Morning #6:
+Environment: [2, 'CLEAN', 'CLEAN']
+Percept: [2, 'CLEAN']
+Score: 9
+
+Night action = None
+
+Morning #7:
+Environment: [2, 'DIRTY', 'CLEAN']
+Percept: [2, 'CLEAN']
+Score: 10
+
+Night action = None
+
+Morning #8:
+Environment: [2, 'DIRTY', 'CLEAN']
+Percept: [2, 'CLEAN']
+Score: 11
+
+Night action = LEFT
+
+Morning #9:
+Environment: [1, 'DIRTY', 'CLEAN']
+Percept: [1, 'DIRTY']
+Score: 11
+
+Night action = VACUUM
+
+Morning #10:
+Environment: [1, 'CLEAN', 'CLEAN']
+Percept: [1, 'CLEAN']
+Score: 12
+
+Night action = None
+
+Morning #11:
+Environment: [1, 'CLEAN', 'CLEAN']
+Percept: [1, 'CLEAN']
+Score: 14
+
+Night action = None
+
+Morning #12:
+Environment: [1, 'CLEAN', 'CLEAN']
+Percept: [1, 'CLEAN']
+Score: 16
+
+Night action = RIGHT
+
+Morning #13:
+Environment: [2, 'CLEAN', 'CLEAN']
+Percept: [2, 'CLEAN']
+Score: 17
+
+Night action = None
+
+Morning #14:
+Environment: [2, 'CLEAN', 'CLEAN']
+Percept: [2, 'CLEAN']
+Score: 19
+
+Night action = None
+
+Morning #15:
+Environment: [2, 'CLEAN', 'CLEAN']
+Percept: [2, 'CLEAN']
+Score: 21
+
+Night action = LEFT
+
+Morning #16:
+Environment: [1, 'CLEAN', 'CLEAN']
+Percept: [1, 'CLEAN']
+Score: 22
+
+Night action = None
+
+Morning #17:
+Environment: [1, 'CLEAN', 'CLEAN']
+Percept: [1, 'CLEAN']
+Score: 24
+
+Night action = None
+
+Morning #18:
+Environment: [1, 'DIRTY', 'CLEAN']
+Percept: [1, 'DIRTY']
+Score: 25
+
+Night action = VACUUM
+
+Morning #19:
+Environment: [1, 'CLEAN', 'CLEAN']
+Percept: [1, 'CLEAN']
+Score: 26
+
+Night action = None
+
+Morning #20:
+Environment: [1, 'CLEAN', 'CLEAN']
+
+FINAL SCORE: 26
+##########################################################
+
+Agent: DANG_DUC
+
+probability of dirt:  0.2
+points for moving:  -0.3
+points for vacuuming:  -0.4
+points for exactly one room clean:  1
+points for exactly two rooms clean:  3
+
+
+Morning #0:
+Environment: [1, 'CLEAN', 'CLEAN']
+Percept: [1, 'CLEAN']
+Score: 0
+
+Night action = None
+
+Morning #1:
+Environment: [1, 'CLEAN', 'DIRTY']
+Percept: [1, 'CLEAN']
+Score: 1
+
+Night action = None
+
+Morning #2:
+Environment: [1, 'CLEAN', 'DIRTY']
+Percept: [1, 'CLEAN']
+Score: 2
+
+Night action = RIGHT
+
+Morning #3:
+Environment: [2, 'CLEAN', 'DIRTY']
+Percept: [2, 'DIRTY']
+Score: 2.7
+
+Night action = VACUUM
+
+Morning #4:
+Environment: [2, 'CLEAN', 'CLEAN']
+Percept: [2, 'CLEAN']
+Score: 5.3
+
+Night action = None
+
+Morning #5:
+Environment: [2, 'CLEAN', 'CLEAN']
+Percept: [2, 'CLEAN']
+Score: 8.3
+
+Night action = None
+
+Morning #6:
+Environment: [2, 'DIRTY', 'CLEAN']
+Percept: [2, 'CLEAN']
+Score: 9.3
+
+Night action = LEFT
+
+Morning #7:
+Environment: [1, 'DIRTY', 'DIRTY']
+Percept: [1, 'DIRTY']
+Score: 12.0
+
+Night action = VACUUM
+
+Morning #8:
+Environment: [1, 'CLEAN', 'DIRTY']
+Percept: [1, 'CLEAN']
+Score: 12.6
+
+Night action = None
+
+Morning #9:
+Environment: [1, 'CLEAN', 'DIRTY']
+Percept: [1, 'CLEAN']
+Score: 13.6
+
+Night action = None
+
+Morning #10:
+Environment: [1, 'DIRTY', 'DIRTY']
+Percept: [1, 'DIRTY']
+Score: 16.6
+
+Night action = VACUUM
+
+Morning #11:
+Environment: [1, 'CLEAN', 'DIRTY']
+Percept: [1, 'CLEAN']
+Score: 17.2
+
+Night action = None
+
+Morning #12:
+Environment: [1, 'DIRTY', 'DIRTY']
+Percept: [1, 'DIRTY']
+Score: 20.2
+
+Night action = VACUUM
+
+Morning #13:
+Environment: [1, 'CLEAN', 'DIRTY']
+Percept: [1, 'CLEAN']
+Score: 20.8
+
+Night action = None
+
+Morning #14:
+Environment: [1, 'CLEAN', 'DIRTY']
+Percept: [1, 'CLEAN']
+Score: 21.8
+
+Night action = None
+
+Morning #15:
+Environment: [1, 'CLEAN', 'DIRTY']
+Percept: [1, 'CLEAN']
+Score: 22.8
+
+Night action = RIGHT
+
+Morning #16:
+Environment: [2, 'CLEAN', 'DIRTY']
+Percept: [2, 'DIRTY']
+Score: 23.5
+
+Night action = VACUUM
+
+Morning #17:
+Environment: [2, 'CLEAN', 'CLEAN']
+Percept: [2, 'CLEAN']
+Score: 26.1
+
+Night action = None
+
+Morning #18:
+Environment: [2, 'CLEAN', 'CLEAN']
+Percept: [2, 'CLEAN']
+Score: 29.1
+
+Night action = None
+
+Morning #19:
+Environment: [2, 'CLEAN', 'CLEAN']
+Percept: [2, 'CLEAN']
+Score: 32.1
+
+Night action = LEFT
+
+Morning #20:
+Environment: [1, 'CLEAN', 'CLEAN']
+
+FINAL SCORE: 31.8
+##########################################################
+
+Agent: DANG_DUC
+
+probability of dirt:  0.4
+points for moving:  -0.3
+points for vacuuming:  -0.4
+points for exactly one room clean:  1
+points for exactly two rooms clean:  3
+
+
+Morning #0:
+Environment: [1, 'CLEAN', 'CLEAN']
+Percept: [1, 'CLEAN']
+Score: 0
+
+Night action = None
+
+Morning #1:
+Environment: [1, 'CLEAN', 'CLEAN']
+Percept: [1, 'CLEAN']
+Score: 3
+
+Night action = None
+
+Morning #2:
+Environment: [1, 'DIRTY', 'DIRTY']
+Percept: [1, 'DIRTY']
+Score: 6
+
+Night action = VACUUM
+
+Morning #3:
+Environment: [1, 'CLEAN', 'DIRTY']
+Percept: [1, 'CLEAN']
+Score: 6.6
+
+Night action = None
+
+Morning #4:
+Environment: [1, 'DIRTY', 'DIRTY']
+Percept: [1, 'DIRTY']
+Score: 9.6
+
+Night action = VACUUM
+
+Morning #5:
+Environment: [1, 'DIRTY', 'DIRTY']
+Percept: [1, 'DIRTY']
+Score: 12.2
+
+Night action = VACUUM
+
+Morning #6:
+Environment: [1, 'DIRTY', 'DIRTY']
+Percept: [1, 'DIRTY']
+Score: 14.8
+
+Night action = VACUUM
+
+Morning #7:
+Environment: [1, 'DIRTY', 'DIRTY']
+Percept: [1, 'DIRTY']
+Score: 17.4
+
+Night action = VACUUM
+
+Morning #8:
+Environment: [1, 'CLEAN', 'DIRTY']
+Percept: [1, 'CLEAN']
+Score: 18.0
+
+Night action = None
+
+Morning #9:
+Environment: [1, 'DIRTY', 'DIRTY']
+Percept: [1, 'DIRTY']
+Score: 21.0
+
+Night action = VACUUM
+
+Morning #10:
+Environment: [1, 'CLEAN', 'DIRTY']
+Percept: [1, 'CLEAN']
+Score: 21.6
+
+Night action = None
+
+Morning #11:
+Environment: [1, 'CLEAN', 'DIRTY']
+Percept: [1, 'CLEAN']
+Score: 22.6
+
+Night action = None
+
+Morning #12:
+Environment: [1, 'CLEAN', 'DIRTY']
+Percept: [1, 'CLEAN']
+Score: 23.6
+
+Night action = RIGHT
+
+Morning #13:
+Environment: [2, 'CLEAN', 'DIRTY']
+Percept: [2, 'DIRTY']
+Score: 24.3
+
+Night action = VACUUM
+
+Morning #14:
+Environment: [2, 'DIRTY', 'DIRTY']
+Percept: [2, 'DIRTY']
+Score: 26.9
+
+Night action = VACUUM
+
+Morning #15:
+Environment: [2, 'DIRTY', 'CLEAN']
+Percept: [2, 'CLEAN']
+Score: 27.5
+
+Night action = None
+
+Morning #16:
+Environment: [2, 'DIRTY', 'CLEAN']
+Percept: [2, 'CLEAN']
+Score: 28.5
+
+Night action = None
+
+Morning #17:
+Environment: [2, 'DIRTY', 'CLEAN']
+Percept: [2, 'CLEAN']
+Score: 29.5
+
+Night action = LEFT
+
+Morning #18:
+Environment: [1, 'DIRTY', 'DIRTY']
+Percept: [1, 'DIRTY']
+Score: 32.2
+
+Night action = VACUUM
+
+Morning #19:
+Environment: [1, 'CLEAN', 'DIRTY']
+Percept: [1, 'CLEAN']
+Score: 32.8
+
+Night action = None
+
+Morning #20:
+Environment: [1, 'CLEAN', 'DIRTY']
+
+FINAL SCORE: 32.8
+##########################################################
+
+Agent: DANG_DUC
+
+probability of dirt:  0.05
+points for moving:  -0.3
+points for vacuuming:  -0.5
+points for exactly one room clean:  2
+points for exactly two rooms clean:  5
+
+
+Morning #0:
+Environment: [1, 'CLEAN', 'CLEAN']
+Percept: [1, 'CLEAN']
+Score: 0
+
+Night action = None
+
+Morning #1:
+Environment: [1, 'CLEAN', 'CLEAN']
+Percept: [1, 'CLEAN']
+Score: 5
+
+Night action = None
+
+Morning #2:
+Environment: [1, 'CLEAN', 'CLEAN']
+Percept: [1, 'CLEAN']
+Score: 10
+
+Night action = None
+
+Morning #3:
+Environment: [1, 'CLEAN', 'CLEAN']
+Percept: [1, 'CLEAN']
+Score: 15
+
+Night action = None
+
+Morning #4:
+Environment: [1, 'CLEAN', 'CLEAN']
+Percept: [1, 'CLEAN']
+Score: 20
+
+Night action = RIGHT
+
+Morning #5:
+Environment: [2, 'CLEAN', 'CLEAN']
+Percept: [2, 'CLEAN']
+Score: 24.7
+
+Night action = None
+
+Morning #6:
+Environment: [2, 'CLEAN', 'CLEAN']
+Percept: [2, 'CLEAN']
+Score: 29.7
+
+Night action = None
+
+Morning #7:
+Environment: [2, 'CLEAN', 'CLEAN']
+Percept: [2, 'CLEAN']
+Score: 34.7
+
+Night action = None
+
+Morning #8:
+Environment: [2, 'DIRTY', 'CLEAN']
+Percept: [2, 'CLEAN']
+Score: 36.7
+
+Night action = None
+
+Morning #9:
+Environment: [2, 'DIRTY', 'CLEAN']
+Percept: [2, 'CLEAN']
+Score: 38.7
+
+Night action = LEFT
+
+Morning #10:
+Environment: [1, 'DIRTY', 'CLEAN']
+Percept: [1, 'DIRTY']
+Score: 40.4
+
+Night action = VACUUM
+
+Morning #11:
+Environment: [1, 'CLEAN', 'CLEAN']
+Percept: [1, 'CLEAN']
+Score: 44.9
+
+Night action = None
+
+Morning #12:
+Environment: [1, 'CLEAN', 'CLEAN']
+Percept: [1, 'CLEAN']
+Score: 49.9
+
+Night action = None
+
+Morning #13:
+Environment: [1, 'CLEAN', 'CLEAN']
+Percept: [1, 'CLEAN']
+Score: 54.9
+
+Night action = None
+
+Morning #14:
+Environment: [1, 'CLEAN', 'CLEAN']
+Percept: [1, 'CLEAN']
+Score: 59.9
+
+Night action = None
+
+Morning #15:
+Environment: [1, 'CLEAN', 'DIRTY']
+Percept: [1, 'CLEAN']
+Score: 61.9
+
+Night action = RIGHT
+
+Morning #16:
+Environment: [2, 'CLEAN', 'DIRTY']
+Percept: [2, 'DIRTY']
+Score: 63.6
+
+Night action = VACUUM
+
+Morning #17:
+Environment: [2, 'CLEAN', 'CLEAN']
+Percept: [2, 'CLEAN']
+Score: 68.1
+
+Night action = None
+
+Morning #18:
+Environment: [2, 'CLEAN', 'CLEAN']
+Percept: [2, 'CLEAN']
+Score: 73.1
+
+Night action = None
+
+Morning #19:
+Environment: [2, 'CLEAN', 'CLEAN']
+Percept: [2, 'CLEAN']
+Score: 78.1
+
+Night action = None
+
+Morning #20:
+Environment: [2, 'CLEAN', 'CLEAN']
+
+FINAL SCORE: 78.1
+##########################################################
+
