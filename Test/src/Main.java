@@ -37,7 +37,7 @@ public class Main {
 
         String str =""+num+(char)char1;
 
-        if (age <28)
+        if (age <18)
             str +="-M";
 
         return str;
