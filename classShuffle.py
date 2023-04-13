@@ -8,9 +8,9 @@ originL = ['Abbaad', 'Carlos', 'Daniel', 'Dario', 'Fabian', 'Ghazwan', 'Hanif', 
 #            "Jonathan", "Jose", "Ghazwan","Nicole","Hanif","Olvin","Fabian","Mit","Maicky",
 #            "Carlos","Dario","Jj","Jacob","Vraj","Vratik","Daniel","Kusoe","Ianko","Khaled","Muawiyah"]
 
-classList = ['Abbaad','Carlos', 'Daniel', 'John Michael', 'Dario', 'Ghazwan','Isaac',
-             'Jacob', 'Jj', 'Jonathan', 'Jordi', 'Jose', 'Khaled', 'Khanh', 'Kusoe',
-             'Maicky','Nomin', 'Olvin','Nicole','Vraj', 'Vratik']
+classList = ['Abbaad', 'Carlos', 'Daniel', 'Dario', 'Fabian', 'Ghazwan', 'Hanif', 'Ianko', 'Isaac',
+           'Jacob', 'Jj', 'John Michael', 'Jonathan', 'Jordi', 'Jose', 'Khaled', 'Khanh', 'Kusoe',
+           'Maicky', 'Mit', 'Muawiyah', 'Nicole', 'Nomin', 'Olvin', 'Vraj', 'Vratik']
 
 print("Class number: ", len(classList))
 dupL = classList.copy()

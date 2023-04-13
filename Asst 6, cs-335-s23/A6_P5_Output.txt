@@ -1,0 +1,217 @@
+ 
+  ----jGRASP exec: python A6_P5_Entails.py
+ 
+ LASTNAME_FIRSTNAME
+ CS-335, Spring 2023
+ A6_P5_Entails
+ 
+ Entails using Resolution:
+ 
+ =============================================
+ 
+ Test #1
+ The knowledge base: 
+ 
+ ['x1']
+ ['~x1']
+ 
+ The query:  0 = 1
+ 
+ The knowledge base DOES ENTAIL the query.
+ =============================================
+ 
+ Test #2
+ The knowledge base: 
+ 
+ ['x1', 'x2']
+ ['~x1', '~x2']
+ ['~x1', 'x2']
+ ['x3', 'x4']
+ 
+ The query:  x2
+ 
+ The knowledge base DOES ENTAIL the query.
+ =============================================
+ 
+ Test #3
+ The knowledge base: 
+ 
+ ['x1', 'x2']
+ ['~x1', '~x2']
+ ['~x1', 'x2']
+ ['x3', 'x4']
+ 
+ The query:  ~x2
+ 
+ The knowledge base does NOT entail the query.
+ =============================================
+ 
+ Test #4
+ The knowledge base: 
+ 
+ ['x1', 'x2']
+ ['~x1', '~x2']
+ ['~x1', 'x2']
+ ['x3', 'x4']
+ 
+ The query:  x3
+ 
+ The knowledge base does NOT entail the query.
+ =============================================
+ 
+ Test #5
+ The knowledge base: 
+ 
+ ['~mythical', '~mortal']
+ ['mythical', 'mortal']
+ ['mythical', 'mammal']
+ ['horned', 'mortal']
+ ['horned', '~mammal']
+ ['~horned', 'magical']
+ 
+ The query:  horned
+ 
+ The knowledge base DOES ENTAIL the query.
+ =============================================
+ 
+ Test #6
+ The knowledge base: 
+ 
+ ['~mythical', '~mortal']
+ ['mythical', 'mortal']
+ ['mythical', 'mammal']
+ ['horned', 'mortal']
+ ['horned', '~mammal']
+ ['~horned', 'magical']
+ 
+ The query:  magical
+ 
+ The knowledge base DOES ENTAIL the query.
+ =============================================
+ 
+ Test #7
+ The knowledge base: 
+ 
+ ['~mythical', '~mortal']
+ ['mythical', 'mortal']
+ ['mythical', 'mammal']
+ ['horned', 'mortal']
+ ['horned', '~mammal']
+ ['~horned', 'magical']
+ 
+ The query:  messy
+ 
+ The knowledge base does NOT entail the query.
+ =============================================
+ 
+ Test #8
+ The knowledge base: 
+ 
+ ['~mythical', '~mortal']
+ ['mythical', 'mortal']
+ ['mythical', 'mammal']
+ ['horned', 'mortal']
+ ['horned', '~mammal']
+ ['~horned', 'magical']
+ 
+ The query:  mythical
+ 
+ The knowledge base does NOT entail the query.
+ =============================================
+ 
+ Test #9
+ The knowledge base: 
+ 
+ ['~P', 'Q']
+ ['~L', '~M', 'P']
+ ['~B', '~L', 'M']
+ ['~A', '~P', 'L']
+ ['~A', '~B', 'L']
+ ['A']
+ ['B']
+ 
+ The query:  Q
+ 
+ The knowledge base DOES ENTAIL the query.
+ =============================================
+ 
+ Test #10
+ The knowledge base: 
+ 
+ ['~P', 'Q']
+ ['~L', '~M', 'P']
+ ['~B', '~L', 'M']
+ ['~A', '~P', 'L']
+ ['~A', '~B', 'L']
+ ['~N', 'X']
+ ['~R', '~S', 'X']
+ ['~S', '~Q', 'S']
+ ['A']
+ ['B']
+ 
+ The query:  P
+ 
+ The knowledge base DOES ENTAIL the query.
+ =============================================
+ 
+ Test #11
+ The knowledge base: 
+ 
+ ['~P', 'Q']
+ ['~L', '~M', 'P']
+ ['~B', '~L', 'M']
+ ['~A', '~P', 'L']
+ ['~A', '~B', 'L']
+ ['~N', 'X']
+ ['~R', '~S', 'X']
+ ['~S', '~Q', 'S']
+ ['A']
+ ['B']
+ 
+ The query:  S
+ 
+ The knowledge base does NOT entail the query.
+ =============================================
+ 
+ Test #12
+ The knowledge base: 
+ 
+ ['~P', 'Q']
+ ['~L', '~M', 'P']
+ ['~B', '~L', 'M']
+ ['~A', '~P', 'L']
+ ['~A', '~B', 'L']
+ ['~N', 'X']
+ ['~R', '~S', 'X']
+ ['~S', '~Q', 'S']
+ ['A']
+ ['B']
+ 
+ The query:  X
+ 
+ The knowledge base does NOT entail the query.
+ =============================================
+ 
+ Test #13
+ The knowledge base: 
+ 
+ ['~A', '~B', 'C']
+ ['~B', '~D', 'E']
+ ['~A', 'F']
+ ['~L', '~M', '~F', 'H']
+ ['~F', '~D', 'B']
+ ['~F', '~H', 'B']
+ ['~C', '~B', '~F', 'G']
+ ['~G', '~E', 'J']
+ ['~L', '~F', 'M']
+ ['~M', '~L', 'H']
+ ['~M', 'L']
+ ['A']
+ ['D']
+ 
+ The query:  G
+ 
+ The knowledge base DOES ENTAIL the query.
+ 
+  ----jGRASP: operation complete.
+ 

@@ -1,0 +1,624 @@
+ 
+  ----jGRASP exec: python A6_P4_Satisfiable.py
+ 
+ LASTNAME_FIRSTNAME
+ CS-335, Spring 2023
+ A6_P4_Satisfiable
+ 
+ 
+ formula F4:  [['x1', 'x2'], ['~x1', '~x2'], ['~x1', 'x2']]
+ 
+ 
+ len(all) = 3:
+ 
+ all[0] = ['x1', 'x2']
+ all[1] = ['~x1', '~x2']
+ all[2] = ['~x1', 'x2']
+ 
+ ======================= round 1 =========================
+ 
+ pair number 1:
+ all[0] = ['x1', 'x2']
+ all[1] = ['~x1', '~x2']
+ resolvents = [['x2', '~x2'], ['x1', '~x1']]
+ 
+ pair number 2:
+ all[0] = ['x1', 'x2']
+ all[2] = ['~x1', 'x2']
+ resolvents = [['x2']]
+ 
+ pair number 3:
+ all[1] = ['~x1', '~x2']
+ all[2] = ['~x1', 'x2']
+ resolvents = [['~x1']]
+ 
+ ======================
+ len(all) = 7:
+ 
+ 
+ all[0] = ['x1', 'x2']
+ all[1] = ['~x1', '~x2']
+ all[2] = ['~x1', 'x2']
+ all[3] = ['x2', '~x2']
+ all[4] = ['x1', '~x1']
+ all[5] = ['x2']
+ all[6] = ['~x1']
+ 
+ ======================= round 2 =========================
+ 
+ pair number 1:
+ all[0] = ['x1', 'x2']
+ all[1] = ['~x1', '~x2']
+ resolvents = [['x2', '~x2'], ['x1', '~x1']]
+ 
+ pair number 2:
+ all[0] = ['x1', 'x2']
+ all[2] = ['~x1', 'x2']
+ resolvents = [['x2']]
+ 
+ pair number 3:
+ all[0] = ['x1', 'x2']
+ all[3] = ['x2', '~x2']
+ resolvents = [['x1', 'x2']]
+ 
+ pair number 4:
+ all[0] = ['x1', 'x2']
+ all[4] = ['x1', '~x1']
+ resolvents = [['x1', 'x2']]
+ 
+ pair number 5:
+ all[0] = ['x1', 'x2']
+ all[5] = ['x2']
+ resolvents = []
+ 
+ pair number 6:
+ all[0] = ['x1', 'x2']
+ all[6] = ['~x1']
+ resolvents = [['x2']]
+ 
+ pair number 7:
+ all[1] = ['~x1', '~x2']
+ all[2] = ['~x1', 'x2']
+ resolvents = [['~x1']]
+ 
+ pair number 8:
+ all[1] = ['~x1', '~x2']
+ all[3] = ['x2', '~x2']
+ resolvents = [['~x1', '~x2']]
+ 
+ pair number 9:
+ all[1] = ['~x1', '~x2']
+ all[4] = ['x1', '~x1']
+ resolvents = [['~x1', '~x2']]
+ 
+ pair number 10:
+ all[1] = ['~x1', '~x2']
+ all[5] = ['x2']
+ resolvents = [['~x1']]
+ 
+ pair number 11:
+ all[1] = ['~x1', '~x2']
+ all[6] = ['~x1']
+ resolvents = []
+ 
+ pair number 12:
+ all[2] = ['~x1', 'x2']
+ all[3] = ['x2', '~x2']
+ resolvents = [['x2', '~x1']]
+ 
+ pair number 13:
+ all[2] = ['~x1', 'x2']
+ all[4] = ['x1', '~x1']
+ resolvents = [['x2', '~x1']]
+ 
+ pair number 14:
+ all[2] = ['~x1', 'x2']
+ all[5] = ['x2']
+ resolvents = []
+ 
+ pair number 15:
+ all[2] = ['~x1', 'x2']
+ all[6] = ['~x1']
+ resolvents = []
+ 
+ pair number 16:
+ all[3] = ['x2', '~x2']
+ all[4] = ['x1', '~x1']
+ resolvents = []
+ 
+ pair number 17:
+ all[3] = ['x2', '~x2']
+ all[5] = ['x2']
+ resolvents = [['x2']]
+ 
+ pair number 18:
+ all[3] = ['x2', '~x2']
+ all[6] = ['~x1']
+ resolvents = []
+ 
+ pair number 19:
+ all[4] = ['x1', '~x1']
+ all[5] = ['x2']
+ resolvents = []
+ 
+ pair number 20:
+ all[4] = ['x1', '~x1']
+ all[6] = ['~x1']
+ resolvents = [['~x1']]
+ 
+ pair number 21:
+ all[5] = ['x2']
+ all[6] = ['~x1']
+ resolvents = []
+ 
+ ======================
+ len(all) = 8:
+ 
+ 
+ all[0] = ['x1', 'x2']
+ all[1] = ['~x1', '~x2']
+ all[2] = ['~x1', 'x2']
+ all[3] = ['x2', '~x2']
+ all[4] = ['x1', '~x1']
+ all[5] = ['x2']
+ all[6] = ['~x1']
+ all[7] = ['x2', '~x1']
+ 
+ ======================= round 3 =========================
+ 
+ pair number 1:
+ all[0] = ['x1', 'x2']
+ all[1] = ['~x1', '~x2']
+ resolvents = [['x2', '~x2'], ['x1', '~x1']]
+ 
+ pair number 2:
+ all[0] = ['x1', 'x2']
+ all[2] = ['~x1', 'x2']
+ resolvents = [['x2']]
+ 
+ pair number 3:
+ all[0] = ['x1', 'x2']
+ all[3] = ['x2', '~x2']
+ resolvents = [['x1', 'x2']]
+ 
+ pair number 4:
+ all[0] = ['x1', 'x2']
+ all[4] = ['x1', '~x1']
+ resolvents = [['x1', 'x2']]
+ 
+ pair number 5:
+ all[0] = ['x1', 'x2']
+ all[5] = ['x2']
+ resolvents = []
+ 
+ pair number 6:
+ all[0] = ['x1', 'x2']
+ all[6] = ['~x1']
+ resolvents = [['x2']]
+ 
+ pair number 7:
+ all[0] = ['x1', 'x2']
+ all[7] = ['x2', '~x1']
+ resolvents = [['x2']]
+ 
+ pair number 8:
+ all[1] = ['~x1', '~x2']
+ all[2] = ['~x1', 'x2']
+ resolvents = [['~x1']]
+ 
+ pair number 9:
+ all[1] = ['~x1', '~x2']
+ all[3] = ['x2', '~x2']
+ resolvents = [['~x1', '~x2']]
+ 
+ pair number 10:
+ all[1] = ['~x1', '~x2']
+ all[4] = ['x1', '~x1']
+ resolvents = [['~x1', '~x2']]
+ 
+ pair number 11:
+ all[1] = ['~x1', '~x2']
+ all[5] = ['x2']
+ resolvents = [['~x1']]
+ 
+ pair number 12:
+ all[1] = ['~x1', '~x2']
+ all[6] = ['~x1']
+ resolvents = []
+ 
+ pair number 13:
+ all[1] = ['~x1', '~x2']
+ all[7] = ['x2', '~x1']
+ resolvents = [['~x1']]
+ 
+ pair number 14:
+ all[2] = ['~x1', 'x2']
+ all[3] = ['x2', '~x2']
+ resolvents = [['x2', '~x1']]
+ 
+ pair number 15:
+ all[2] = ['~x1', 'x2']
+ all[4] = ['x1', '~x1']
+ resolvents = [['x2', '~x1']]
+ 
+ pair number 16:
+ all[2] = ['~x1', 'x2']
+ all[5] = ['x2']
+ resolvents = []
+ 
+ pair number 17:
+ all[2] = ['~x1', 'x2']
+ all[6] = ['~x1']
+ resolvents = []
+ 
+ pair number 18:
+ all[2] = ['~x1', 'x2']
+ all[7] = ['x2', '~x1']
+ resolvents = []
+ 
+ pair number 19:
+ all[3] = ['x2', '~x2']
+ all[4] = ['x1', '~x1']
+ resolvents = []
+ 
+ pair number 20:
+ all[3] = ['x2', '~x2']
+ all[5] = ['x2']
+ resolvents = [['x2']]
+ 
+ pair number 21:
+ all[3] = ['x2', '~x2']
+ all[6] = ['~x1']
+ resolvents = []
+ 
+ pair number 22:
+ all[3] = ['x2', '~x2']
+ all[7] = ['x2', '~x1']
+ resolvents = [['x2', '~x1']]
+ 
+ pair number 23:
+ all[4] = ['x1', '~x1']
+ all[5] = ['x2']
+ resolvents = []
+ 
+ pair number 24:
+ all[4] = ['x1', '~x1']
+ all[6] = ['~x1']
+ resolvents = [['~x1']]
+ 
+ pair number 25:
+ all[4] = ['x1', '~x1']
+ all[7] = ['x2', '~x1']
+ resolvents = [['x2', '~x1']]
+ 
+ pair number 26:
+ all[5] = ['x2']
+ all[6] = ['~x1']
+ resolvents = []
+ 
+ pair number 27:
+ all[5] = ['x2']
+ all[7] = ['x2', '~x1']
+ resolvents = []
+ 
+ pair number 28:
+ all[6] = ['~x1']
+ all[7] = ['x2', '~x1']
+ resolvents = []
+ 
+ No new resolvents!
+ This formula IS SATISFIABLE.
+ 
+ 
+ ============================================
+ 
+ 
+ 
+ formula F3:  [['x1', 'x2'], ['~x1', '~x2'], ['x1', '~x2'], ['~x1', 'x2']]
+ 
+ len(all) = 4:
+ 
+ all[0] = ['x1', 'x2']
+ all[1] = ['~x1', '~x2']
+ all[2] = ['x1', '~x2']
+ all[3] = ['~x1', 'x2']
+ 
+ ======================= round 1 =========================
+ 
+ pair number 1:
+ all[0] = ['x1', 'x2']
+ all[1] = ['~x1', '~x2']
+ resolvents = [['x2', '~x2'], ['x1', '~x1']]
+ 
+ pair number 2:
+ all[0] = ['x1', 'x2']
+ all[2] = ['x1', '~x2']
+ resolvents = [['x1']]
+ 
+ pair number 3:
+ all[0] = ['x1', 'x2']
+ all[3] = ['~x1', 'x2']
+ resolvents = [['x2']]
+ 
+ pair number 4:
+ all[1] = ['~x1', '~x2']
+ all[2] = ['x1', '~x2']
+ resolvents = [['~x2']]
+ 
+ pair number 5:
+ all[1] = ['~x1', '~x2']
+ all[3] = ['~x1', 'x2']
+ resolvents = [['~x1']]
+ 
+ pair number 6:
+ all[2] = ['x1', '~x2']
+ all[3] = ['~x1', 'x2']
+ resolvents = [['x2', '~x2'], ['x1', '~x1']]
+ 
+ ======================
+ len(all) = 10:
+ 
+ 
+ all[0] = ['x1', 'x2']
+ all[1] = ['~x1', '~x2']
+ all[2] = ['x1', '~x2']
+ all[3] = ['~x1', 'x2']
+ all[4] = ['x2', '~x2']
+ all[5] = ['x1', '~x1']
+ all[6] = ['x1']
+ all[7] = ['x2']
+ all[8] = ['~x2']
+ all[9] = ['~x1']
+ 
+ ======================= round 2 =========================
+ 
+ pair number 1:
+ all[0] = ['x1', 'x2']
+ all[1] = ['~x1', '~x2']
+ resolvents = [['x2', '~x2'], ['x1', '~x1']]
+ 
+ pair number 2:
+ all[0] = ['x1', 'x2']
+ all[2] = ['x1', '~x2']
+ resolvents = [['x1']]
+ 
+ pair number 3:
+ all[0] = ['x1', 'x2']
+ all[3] = ['~x1', 'x2']
+ resolvents = [['x2']]
+ 
+ pair number 4:
+ all[0] = ['x1', 'x2']
+ all[4] = ['x2', '~x2']
+ resolvents = [['x1', 'x2']]
+ 
+ pair number 5:
+ all[0] = ['x1', 'x2']
+ all[5] = ['x1', '~x1']
+ resolvents = [['x1', 'x2']]
+ 
+ pair number 6:
+ all[0] = ['x1', 'x2']
+ all[6] = ['x1']
+ resolvents = []
+ 
+ pair number 7:
+ all[0] = ['x1', 'x2']
+ all[7] = ['x2']
+ resolvents = []
+ 
+ pair number 8:
+ all[0] = ['x1', 'x2']
+ all[8] = ['~x2']
+ resolvents = [['x1']]
+ 
+ pair number 9:
+ all[0] = ['x1', 'x2']
+ all[9] = ['~x1']
+ resolvents = [['x2']]
+ 
+ pair number 10:
+ all[1] = ['~x1', '~x2']
+ all[2] = ['x1', '~x2']
+ resolvents = [['~x2']]
+ 
+ pair number 11:
+ all[1] = ['~x1', '~x2']
+ all[3] = ['~x1', 'x2']
+ resolvents = [['~x1']]
+ 
+ pair number 12:
+ all[1] = ['~x1', '~x2']
+ all[4] = ['x2', '~x2']
+ resolvents = [['~x1', '~x2']]
+ 
+ pair number 13:
+ all[1] = ['~x1', '~x2']
+ all[5] = ['x1', '~x1']
+ resolvents = [['~x1', '~x2']]
+ 
+ pair number 14:
+ all[1] = ['~x1', '~x2']
+ all[6] = ['x1']
+ resolvents = [['~x2']]
+ 
+ pair number 15:
+ all[1] = ['~x1', '~x2']
+ all[7] = ['x2']
+ resolvents = [['~x1']]
+ 
+ pair number 16:
+ all[1] = ['~x1', '~x2']
+ all[8] = ['~x2']
+ resolvents = []
+ 
+ pair number 17:
+ all[1] = ['~x1', '~x2']
+ all[9] = ['~x1']
+ resolvents = []
+ 
+ pair number 18:
+ all[2] = ['x1', '~x2']
+ all[3] = ['~x1', 'x2']
+ resolvents = [['x2', '~x2'], ['x1', '~x1']]
+ 
+ pair number 19:
+ all[2] = ['x1', '~x2']
+ all[4] = ['x2', '~x2']
+ resolvents = [['x1', '~x2']]
+ 
+ pair number 20:
+ all[2] = ['x1', '~x2']
+ all[5] = ['x1', '~x1']
+ resolvents = [['x1', '~x2']]
+ 
+ pair number 21:
+ all[2] = ['x1', '~x2']
+ all[6] = ['x1']
+ resolvents = []
+ 
+ pair number 22:
+ all[2] = ['x1', '~x2']
+ all[7] = ['x2']
+ resolvents = [['x1']]
+ 
+ pair number 23:
+ all[2] = ['x1', '~x2']
+ all[8] = ['~x2']
+ resolvents = []
+ 
+ pair number 24:
+ all[2] = ['x1', '~x2']
+ all[9] = ['~x1']
+ resolvents = [['~x2']]
+ 
+ pair number 25:
+ all[3] = ['~x1', 'x2']
+ all[4] = ['x2', '~x2']
+ resolvents = [['x2', '~x1']]
+ 
+ pair number 26:
+ all[3] = ['~x1', 'x2']
+ all[5] = ['x1', '~x1']
+ resolvents = [['x2', '~x1']]
+ 
+ pair number 27:
+ all[3] = ['~x1', 'x2']
+ all[6] = ['x1']
+ resolvents = [['x2']]
+ 
+ pair number 28:
+ all[3] = ['~x1', 'x2']
+ all[7] = ['x2']
+ resolvents = []
+ 
+ pair number 29:
+ all[3] = ['~x1', 'x2']
+ all[8] = ['~x2']
+ resolvents = [['~x1']]
+ 
+ pair number 30:
+ all[3] = ['~x1', 'x2']
+ all[9] = ['~x1']
+ resolvents = []
+ 
+ pair number 31:
+ all[4] = ['x2', '~x2']
+ all[5] = ['x1', '~x1']
+ resolvents = []
+ 
+ pair number 32:
+ all[4] = ['x2', '~x2']
+ all[6] = ['x1']
+ resolvents = []
+ 
+ pair number 33:
+ all[4] = ['x2', '~x2']
+ all[7] = ['x2']
+ resolvents = [['x2']]
+ 
+ pair number 34:
+ all[4] = ['x2', '~x2']
+ all[8] = ['~x2']
+ resolvents = [['~x2']]
+ 
+ pair number 35:
+ all[4] = ['x2', '~x2']
+ all[9] = ['~x1']
+ resolvents = []
+ 
+ pair number 36:
+ all[5] = ['x1', '~x1']
+ all[6] = ['x1']
+ resolvents = [['x1']]
+ 
+ pair number 37:
+ all[5] = ['x1', '~x1']
+ all[7] = ['x2']
+ resolvents = []
+ 
+ pair number 38:
+ all[5] = ['x1', '~x1']
+ all[8] = ['~x2']
+ resolvents = []
+ 
+ pair number 39:
+ all[5] = ['x1', '~x1']
+ all[9] = ['~x1']
+ resolvents = [['~x1']]
+ 
+ pair number 40:
+ all[6] = ['x1']
+ all[7] = ['x2']
+ resolvents = []
+ 
+ pair number 41:
+ all[6] = ['x1']
+ all[8] = ['~x2']
+ resolvents = []
+ 
+ pair number 42:
+ all[6] = ['x1']
+ all[9] = ['~x1']
+ resolvents = [[]]
+ 
+ This formula is NOT satisfiable.
+ 
+ 
+ ============================================
+ 
+ 
+ 
+ formulas[0]:  [['x1', 'x2'], ['~x1', 'x4', 'x5']]
+ This formula IS SATISFIABLE.
+ 
+ formulas[1]:  [['x1'], ['~x1']]
+ This formula is NOT satisfiable.
+ 
+ formulas[2]:  [['x1', 'x2', 'x3'], ['x1', '~x3'], ['x1', '~x2'], ['~x1']]
+ This formula is NOT satisfiable.
+ 
+ formulas[3]:  [['x1', 'x2'], ['~x1', '~x2'], ['x1', '~x2'], ['~x1', 'x2']]
+ This formula is NOT satisfiable.
+ 
+ formulas[4]:  [['x1', 'x2'], ['~x1', '~x2'], ['~x1', 'x2']]
+ This formula IS SATISFIABLE.
+ 
+ formulas[5]:  [['~mythical', '~mortal'], ['mythical', 'mortal'], ['mythical', 'mammal'], ['horned', 'mortal'], ['horned', '~mammal'], ['~horned', 'magical'], ['~horned']]
+ This formula is NOT satisfiable.
+ 
+ formulas[6]:  [['~mythical', '~mortal'], ['mythical', 'mortal'], ['mythical', 'mammal'], ['horned', 'mortal'], ['horned', '~mammal'], ['~horned', 'magical'], ['horned'], ['magical']]
+ This formula IS SATISFIABLE.
+ 
+ formulas[7]:  [['~P', 'Q'], ['~L', '~M', 'P'], ['~B', '~L', 'M'], ['~A', '~P', 'L'], ['~A', '~B', 'L'], ['A'], ['B']]
+ This formula IS SATISFIABLE.
+ 
+ formulas[8]:  [['~P', 'Q'], ['~L', '~M', 'P'], ['~B', '~L', 'M'], ['~A', '~P', 'L'], ['~A', '~B', 'L'], ['A'], ['B'], ['~Q']]
+ This formula is NOT satisfiable.
+ 
+ formulas[9]:  [['~P', 'Q'], ['~L', '~M', 'P'], ['~B', '~L', 'M'], ['~A', '~P', 'L'], ['~A', '~B', 'L'], ['~M', '~P', 'X'], ['~X', 'P'], ['~L', 'X'], ['A'], ['B']]
+ This formula IS SATISFIABLE.
+ 
+ 
+  ----jGRASP: operation complete.
+ 
