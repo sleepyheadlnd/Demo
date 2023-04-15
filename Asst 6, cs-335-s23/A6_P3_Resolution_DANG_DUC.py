@@ -9,14 +9,22 @@ import A6_data as f
 #====================================================
 def get_resolvents(c1, c2):
 
+   res = []
+   temp = []
 
+   for i in c1:
+      for j in c2:
+         if i == '~'+j or j == '~'+i :
+            for x in c1:
+               if x != i:
+                  temp.append(x)
+            for y in c2:
+               if y != j:
+                  temp.append(y)
+            res.append(temp)
+            temp=[]
+   return res
 
-
-
-
-
-  
-      
 
 #====================================================
 # DO NOT CHANGE ANYTHING BELOW HERE

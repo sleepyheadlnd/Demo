@@ -9,25 +9,51 @@ import A6_data as f
 #====== Copy your function here from Problem 3 =========================
 def get_resolvents(c1, c2):
 
+   res = []
+   temp = []
 
-
-
-
-
-      
-      
-
+   for i in c1:
+      for j in c2:
+         if i == '~' + j or j == '~' + i:
+            for x in c1:
+               if x != i and x not in temp:
+                  temp.append(x)
+            for y in c2:
+               if y != j and y not in temp:
+                  temp.append(y)
+            temp.sort()
+            res.append(temp)
+            temp = []
+   return res
 
 #=======================================================================     
 def is_satisfiable(clauses, display):  
 
+   all = []
+   all+=clauses
+   # for list in clauses:
+   #    all.append(list)
+   while(True):
+      l = len(all)
+      for i in range(len(clauses)):
+         j=i+1
+         while j < len(clauses):
+              new_resovent= get_resolvents(clauses[i],clauses[j])
+              #new_resovent.sort()
+              if new_resovent ==[[]]:
+                  return False
+              for x in new_resovent:
+                  if x not in all:
+                     all.append(x)
+              j+=1
+      if l == len(all):
+         return True
+      clauses =[]
+      clauses+=all
+      # for list in all:
+      #    clauses.append(list)
 
-
-
-
-
-
-
+   return True
 
 #====================================================
 # DO NOT CHANGE ANYTHING BELOW HERE

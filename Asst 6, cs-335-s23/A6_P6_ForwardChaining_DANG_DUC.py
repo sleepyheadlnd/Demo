@@ -10,13 +10,36 @@ import A6_data as f
 #====================================================
 def forward_chaining(kb, query, display = False):
 
+   queueL = []
+   dequeueL =[]
+   i=0
+   while i < len(kb):
+      if len(kb[i])== 1:
+         queueL+= kb[i]
+         kb[i].pop(0)
+         i-=1
+      i+=1
 
-   
-   
-   
-   
-   
-   
+   while len(queueL)!=0 :
+          deq = queueL.pop(0)
+          dequeueL.append(deq)
+          for j in kb   :
+              if deq in j[0:-1]:
+                 j.remove(deq)
+              if '~'+deq in j[0:-1]:
+                 j.remove('~'+deq)
+              if len(j)==1:
+                 if j[0] not in dequeueL:
+                  queueL+=j
+                 j.remove(j[0])
+   if(display):
+      print(f'inferred = {dequeueL}\n')
+      for i in range(len(kb)):
+         print(f'clause {i}: count = {len(kb[i][:-1])}')
+
+   if query in dequeueL:
+      return True
+   return False
    
    
    
