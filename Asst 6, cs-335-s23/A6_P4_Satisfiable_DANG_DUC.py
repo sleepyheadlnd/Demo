@@ -59,10 +59,11 @@ def is_satisfiable(clauses, display):
                   if x not in all:
                      all.append(x)
               j+=1
-      if(display):
-         print('\n======================')
+
       if l == len(all):
          return True
+      if (display):
+         print('\n======================')
       clauses =[]
       clauses+=all
       round+=1
