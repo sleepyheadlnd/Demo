@@ -1,4 +1,4 @@
-name = "LASTNAME_FIRSTNAME"
+name = "DANG_DUC"
 header1 = "CS-335, Spring 2023"
 header2 = "A6_P4_Satisfiable"
 
@@ -31,14 +31,27 @@ def is_satisfiable(clauses, display):
 
    all = []
    all+=clauses
+   round = 1;
    # for list in clauses:
    #    all.append(list)
    while(True):
       l = len(all)
+      pair = 1
+      if(display):
+         print(f'len(all) = {l}:\n')
+         for li in range(l):
+            print(f'all[{li}] = {all[li]}')
+         print(f'\n======================= round {round} =========================\n')
       for i in range(len(clauses)):
          j=i+1
          while j < len(clauses):
               new_resovent= get_resolvents(clauses[i],clauses[j])
+              if (display):
+                  print(f'pair number {pair}:')
+                  print(f'all[{i}] = {clauses[i]}')
+                  print(f'all[{j}] = {clauses[j]}')
+                  print(f'resolvent = {new_resovent}\n')
+                  pair+=1
               #new_resovent.sort()
               if new_resovent ==[[]]:
                   return False
@@ -46,10 +59,13 @@ def is_satisfiable(clauses, display):
                   if x not in all:
                      all.append(x)
               j+=1
+      if(display):
+         print('\n======================')
       if l == len(all):
          return True
       clauses =[]
       clauses+=all
+      round+=1
       # for list in all:
       #    clauses.append(list)
 

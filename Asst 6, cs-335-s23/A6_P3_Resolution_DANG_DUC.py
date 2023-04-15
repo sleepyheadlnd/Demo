@@ -1,4 +1,4 @@
-name = "LASTNAME_FIRSTNAME"
+name = "DANG_DUC"
 header1 = "CS-335, Spring 2023"
 header2 = "A6_P3_Resolution"
 
