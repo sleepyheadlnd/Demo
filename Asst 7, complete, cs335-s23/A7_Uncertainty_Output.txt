@@ -1,0 +1,156 @@
+ 
+  ----jGRASP exec: python A7_Uncertainty.py
+ 
+ LASTNAME_FIRSTNAME
+ CS-335, Spring 2023
+ A7_Uncertainty
+ 
+ =============================================
+ 
+ Testing Probem 3, probConfig
+ 
+ Test 0:  0.2
+ Test 1:  0.2
+ Test 2:  0.2
+ Test 3:  0.8
+ Test 4:  0.0020971520000000014
+ Test 5:  0.008388608000000004
+ Test 6:  0.008388608000000004
+ Test 7:  0.0005242880000000002
+ Test 8:  0.00013107200000000006
+ Test 9:  0.033554432000000016
+ Test 10:  0.033554432000000016
+ Test 11:  0.033554432000000016
+ Test 12:  0.033554432000000016
+ 
+ Testing Probem 4, nextConfig
+ 
+ config:
+ 
+ [1, 1, 1]
+ [1, 1, 1]
+ [1, 0, 0]
+ 
+ Next config:
+ 
+ [0, 0, 0]
+ [0, 0, 0]
+ [0, 1, 0]
+ 
+ Start config:
+ 
+ [0, 0]
+ [0, 0]
+ 
+ next config:
+ 
+ [1, 0]
+ [0, 0]
+ 
+ next config:
+ 
+ [0, 1]
+ [0, 0]
+ 
+ next config:
+ 
+ [1, 1]
+ [0, 0]
+ 
+ next config:
+ 
+ [0, 0]
+ [1, 0]
+ 
+ next config:
+ 
+ [1, 0]
+ [1, 0]
+ 
+ next config:
+ 
+ [0, 1]
+ [1, 0]
+ 
+ next config:
+ 
+ [1, 1]
+ [1, 0]
+ 
+ next config:
+ 
+ [0, 0]
+ [0, 1]
+ 
+ next config:
+ 
+ [1, 0]
+ [0, 1]
+ 
+ next config:
+ 
+ [0, 1]
+ [0, 1]
+ 
+ next config:
+ 
+ [1, 1]
+ [0, 1]
+ 
+ next config:
+ 
+ [0, 0]
+ [1, 1]
+ 
+ next config:
+ 
+ [1, 0]
+ [1, 1]
+ 
+ next config:
+ 
+ [0, 1]
+ [1, 1]
+ 
+ next config:
+ 
+ [1, 1]
+ [1, 1]
+ 
+ 
+ Testing Probem 5, isConsistent
+ 
+ Test 0:  True
+ Test 1:  False
+ Test 2:  False
+ Test 3:  False
+ Test 4:  False
+ Test 5:  True
+ Test 6:  True
+ Test 7:  True
+ Test 8:  False
+ Test 9:  False
+ Test 10:  False
+ Test 11:  False
+ Test 12:  False
+ Test 13:  False
+ Test 14:  False
+ 
+ Testing Probem 6 HELP, getProbs
+ 
+ Test 0:  [0, 0.512, 1.0, 0.0]
+ Test 1:  [0.1024, 0.1024, 1.0, 1.0]
+ Test 2:  [0, 0.04194, 1.0, 0.0]
+ Test 3:  [0.03686, 0.11878, 1.0, 0.31034]
+ Test 4:  [0.03686, 0.11878, 1.0, 0.31034]
+ Test 5:  [0.00124, 0.00124, 1.0, 1.0]
+ Test 6:  [0.06554, 0.06554, 1.0, 1.0]
+ Test 7:  [0, 0.00773, 1.0, 0.0]
+ Test 8:  [0.1024, 0.11878, 1.0, 0.86207]
+ Test 9:  [0.02684, 0.02684, 1.0, 1.0]
+ Test 10:  [0.2, 1.0, 1.0, 0.2]
+ Test 11:  [0.02047, 0.04376, 1.0, 0.46776]
+ Test 12:  [0.00799, 0.02882, 1.0, 0.27725]
+ 
+  ----jGRASP: operation complete.
+ 

@@ -23,7 +23,7 @@ def forward_chaining(kb, query, display = False):
    while len(queueL)!=0 :
           deq = queueL.pop(0)
           dequeueL.append(deq)
-          for j in kb   :
+          for j in kb:
               if deq in j[0:-1]:
                  j.remove(deq)
               if '~'+deq in j[0:-1]:

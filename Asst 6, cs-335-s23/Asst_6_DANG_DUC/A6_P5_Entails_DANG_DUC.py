@@ -27,29 +27,46 @@ def get_resolvents(c1, c2):
    return res
 
 #====== Copy your function here from Problem 4 =========================
-def is_satisfiable(clauses, display):  
-
+def is_satisfiable(clauses, display):
    all = []
-   all+=clauses
+   all += clauses
+   round = 1
+   l=0
    # for list in clauses:
    #    all.append(list)
-   while(True):
+   while (l < len(all)):
       l = len(all)
+      pair = 1
+      if (display):
+         print(f'len(all) = {l}:\n')
+         for li in range(l):
+            print(f'all[{li}] = {all[li]}')
+         print(f'\n======================= round {round} =========================\n')
       for i in range(len(clauses)):
-         j=i+1
+         j = i + 1
          while j < len(clauses):
-              new_resovent= get_resolvents(clauses[i],clauses[j])
-              #new_resovent.sort()
-              if new_resovent ==[[]]:
-                  return False
-              for x in new_resovent:
-                  if x not in all:
-                     all.append(x)
-              j+=1
-      if l == len(all):
-         return True
-      clauses =[]
-      clauses+=all
+            new_resovent = get_resolvents(clauses[i], clauses[j])
+            if (display):
+               print(f'pair number {pair}:')
+               print(f'all[{i}] = {clauses[i]}')
+               print(f'all[{j}] = {clauses[j]}')
+               print(f'resolvent = {new_resovent}\n')
+               pair += 1
+            # new_resovent.sort()
+            if new_resovent == [[]]:
+               return False
+            for x in new_resovent:
+               if x not in all:
+                  all.append(x)
+            j += 1
+
+      # if l == len(all):
+      #    return True
+      # if (display):
+      #    print('\n======================')
+      clauses = []
+      clauses += all
+      round += 1
       # for list in all:
       #    clauses.append(list)
 

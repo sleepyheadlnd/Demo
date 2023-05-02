@@ -1,4 +1,6 @@
-name = "LASTNAME_FIRSTNAME"
+import math
+
+name = "DANG_DUC"
 header1 = "CS-335, Spring 2023"
 header2 = "A5_P1_CSP"
 
@@ -36,10 +38,16 @@ def getDomains(n, m):
 # WRITE THIS METHOD:
 
 def getDegrees(g):
-  return
 
+  degL =[]
 
-
+  for i in g:
+      count = 0
+      for j in i:
+         if j==1:
+            count+=1
+      degL.append(count)
+  return degL
 
 
 #=======================================================================
@@ -78,12 +86,32 @@ def backtrackingSearch(g, m):
 # WRITE THIS METHOD:
 
 def getNextVariable(g, domains, degrees):
-   return
 
+   #domainL=[]
+   lenL =[]
+   minLen = math.inf
+   highDeg = -math.inf;
+   for i in range(len(domains)):
+      if(len(domains[i])>1):
+         if(len(domains[i])==minLen):
+            #domainL.append(domains[i])
+            lenL.append(i)
+         elif(len(domains[i])<minLen):
+            minLen = len(domains[i])
+            domainL = []
+            lenL = []
+            #domainL.append(domains[i])
+            lenL.append(i)
+   if len(lenL) == 1:
+      return lenL[0]
+   elif len(lenL)>1:
+      for j in lenL:
+         if degrees[j] > highDeg:
+            highDeg = degrees[j]
+            deg = j
+      return deg
 
-
-
-   
+   return -1
 
 #=======================================================================
 # Problem 1c
@@ -100,13 +128,29 @@ def getNextVariable(g, domains, degrees):
 # WRITE THIS METHOD:
 
 def AC3(g, domains, v):
-   return
+
+   queue=[v]
+   poped=[]
+
+   while len(queue) !=0:
+       ver = queue.pop(0)
+       poped.append(ver)
+
+       for i in range(len(g[ver])):
+           if(g[ver][i] ==1):
+               for j in domains[i]:
+                   if j in domains[ver]:
+                      domains[i].remove(j)
+
+               if len(domains[i])==1 and i not in poped and i not in queue:
+                 queue.append(i)
+
+           elif len(domains[i])==0:
+               return []
+
+   return domains
 
 
-
-
-
-      
 #=======================================================================
 # Problem 1d
 # 
@@ -125,7 +169,28 @@ def AC3(g, domains, v):
 # WRITE THIS METHOD:
 
 def backtrack(g, domains, degrees):
-   return
+
+   val = getNextVariable(g, domains, degrees)
+
+   if val == -1:
+      return domains
+
+   for i in domains[val]:
+
+      temp = []
+      for j in domains:
+         temp.append(j.copy())
+
+      temp[val] = [i]
+      infe = AC3(g,temp,val)
+      if len(infe) != 0:
+         result = backtrack(g,infe,degrees)
+         if len(result) !=0:
+            return result
+         #domains.remove(infe)
+      #domains[val].remove(i)
+   return []
+
 
 
 
@@ -251,13 +316,13 @@ def test_backtrackingSearch():
    print("TESTING:  backtrackingSearch(g, m)\n")
 
    for i in range(len(input.graphs)):
-      
+
       g = input.graphs[i]
       print(f'\nTest {i}, n = {len(g)}:\n')
-      
+
       m = 2
       keep_going = True
-      
+
       ans = []
       while keep_going:
          print(f'm = {m}')
@@ -266,19 +331,19 @@ def test_backtrackingSearch():
             m += 1
          else:
             keep_going = False
-      
+
       print(f'Graph[{i}] requires {m} colors:\n')
       print(ans)
       print("-----------------------------------")
-  
-      
+
+
 #=================================================
 # main program
 
-#test_getDegrees()
-#test_getNextVariable()
-#test_AC3()
-#test_backtrackingSearch()
+test_getDegrees()
+test_getNextVariable()
+test_AC3()
+test_backtrackingSearch()
 
 
 

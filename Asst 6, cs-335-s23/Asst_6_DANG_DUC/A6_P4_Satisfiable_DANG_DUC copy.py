@@ -30,29 +30,37 @@ def get_resolvents(c1, c2):
 def is_satisfiable(clauses, display):  
 
    all = []
+   checked =[]
    all+=clauses
    round = 1;
-   # for list in clauses:
-   #    all.append(list)
-   while(True):
+   diff = 0
+   l=0
+   while(l < len(all)):
       l = len(all)
       pair = 1
-      if(display):
-         print(f'len(all) = {l}:\n')
-         for li in range(l):
-            print(f'all[{li}] = {all[li]}')
-         print(f'\n======================= round {round} =========================\n')
-      for i in range(len(clauses)):
-         j=i+1
-         while j < len(clauses):
-              new_resovent= get_resolvents(clauses[i],clauses[j])
-              if (display):
-                  print(f'pair number {pair}:')
-                  print(f'all[{i}] = {clauses[i]}')
-                  print(f'all[{j}] = {clauses[j]}')
-                  print(f'resolvent = {new_resovent}\n')
-                  pair+=1
-              #new_resovent.sort()
+
+      # if(display):
+      #    print(f'len(all) = {l}:\n')
+      #    for li in range(l):
+      #       print(f'all[{li}] = {all[li]}')
+      #    print(f'\n======================= round {round} =========================\n')
+
+      for i in range(l):
+         if(diff==0 or i>= diff-1):
+            j =i+1
+         else:
+            j=diff
+         while j < l:
+
+              new_resovent= get_resolvents(all[i],all[j])
+
+              # if (display):
+              #     print(f'pair number {pair}:')
+              #     print(f'all[{i}] = {clauses[i]}')
+              #     print(f'all[{j}] = {clauses[j]}')
+              #     print(f'resolvent = {new_resovent}\n')
+              #     pair+=1
+
               if new_resovent ==[[]]:
                   return False
               for x in new_resovent:
@@ -60,15 +68,15 @@ def is_satisfiable(clauses, display):
                      all.append(x)
               j+=1
 
-      if l == len(all):
-         return True
-      if (display):
-         print('\n======================')
-      clauses =[]
-      clauses+=all
-      round+=1
-      # for list in all:
-      #    clauses.append(list)
+      #if l == len(all):
+      #   return True
+
+      # if (display):
+      #    print('\n======================')
+      diff = l
+      # clauses =[]
+      # clauses+=all
+      # round+=1
 
    return True
 

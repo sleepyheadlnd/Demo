@@ -1,0 +1,192 @@
+
+
+DANG_DUC
+CS-335, Spring 2023
+A6_P6_Forward_Chaining
+
+Entails using Forward Chaining:
+
+=================================================
+Test #1
+
+The knowledge base: 
+
+['~A', 'B']
+['A']
+
+The query: B
+
+The knowledge base DOES ENTAIL query B.
+
+=================================================
+Test #2
+
+The knowledge base: 
+
+['~A', 'B']
+['B']
+
+The query: A
+
+The knowledge base does NOT entail query A.
+
+=================================================
+Test #3
+
+The knowledge base: 
+
+['~C', '~B', 'A']
+['~D', '~B', 'C']
+['~E', 'D']
+['~D', 'B']
+['E']
+
+The query: A
+
+The knowledge base DOES ENTAIL query A.
+
+=================================================
+Test #4
+
+The knowledge base: 
+
+['~P', 'Q']
+['~L', '~M', 'P']
+['~B', '~L', 'M']
+['~A', '~P', 'L']
+['~A', '~B', 'L']
+['A']
+['B']
+
+The query: Q
+
+The knowledge base DOES ENTAIL query Q.
+
+=================================================
+Test #5
+
+The knowledge base: 
+
+['~P', 'Q']
+['~L', '~M', 'P']
+['~B', '~L', 'M']
+['~A', '~P', 'L']
+['~A', '~B', 'L']
+['~N', 'X']
+['~R', '~S', 'X']
+['~S', '~Q', 'S']
+['A']
+['B']
+
+The query: P
+
+The knowledge base DOES ENTAIL query P.
+
+=================================================
+Test #6
+
+The knowledge base: 
+
+['~P', 'Q']
+['~L', '~M', 'P']
+['~B', '~L', 'M']
+['~A', '~P', 'L']
+['~A', '~B', 'L']
+['~N', 'X']
+['~R', '~S', 'X']
+['~S', '~Q', 'S']
+['A']
+['B']
+
+The query: S
+
+The knowledge base does NOT entail query S.
+
+=================================================
+Test #7
+
+The knowledge base: 
+
+['~P', 'Q']
+['~L', '~M', 'P']
+['~B', '~L', 'M']
+['~A', '~P', 'L']
+['~A', '~B', 'L']
+['~N', 'X']
+['~R', '~S', 'X']
+['~S', '~Q', 'S']
+['A']
+['B']
+
+The query: X
+
+The knowledge base does NOT entail query X.
+
+=================================================
+Test #8
+
+The knowledge base: 
+
+['~A', '~B', 'C']
+['~B', '~D', 'E']
+['~A', 'F']
+['~L', '~M', '~F', 'H']
+['~F', '~D', 'B']
+['~F', '~H', 'B']
+['~C', '~B', '~F', 'G']
+['~G', '~E', 'J']
+['~L', '~F', 'M']
+['~M', '~L', 'H']
+['~M', 'L']
+['A']
+['D']
+
+The query: H
+
+The knowledge base does NOT entail query H.
+
+=================================================
+Test #9
+
+The knowledge base: 
+
+['~A', '~B', 'C']
+['~B', '~D', 'E']
+['~A', 'F']
+['~L', '~M', '~F', 'H']
+['~F', '~D', 'B']
+['~F', '~H', 'B']
+['~C', '~B', '~F', 'G']
+['~G', '~E', 'J']
+['~L', '~F', 'M']
+['~M', '~L', 'H']
+['~M', 'L']
+['A']
+['D']
+
+The query: G
+
+The knowledge base DOES ENTAIL query G.
+
+=================================================
+Test #10
+
+The knowledge base: 
+
+['~L', '~F', 'B']
+['~Y', '~E', 'Z']
+['~W', 'T']
+['~B', '~X', 'W']
+['~F', '~B', 'X']
+['~N', 'Z']
+['~Z', '~Y', 'E']
+['~L', '~P', '~E', 'B']
+['~Z', '~T', 'E']
+['L']
+['F']
+
+The query: W
+
+The knowledge base DOES ENTAIL query W.
+
+Process finished with exit code 0
